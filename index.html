@@ -5,7 +5,22 @@
 try this :)
 <script>
 document.write("hello world<br><br>there");
-</script>  
+</script>
+<p id="demo"></p>
+
+<script>
+var stuff = `{
+    "name":"John",
+    "age":31,
+    "pets":[
+        { "animal":"dog", "name":"Fido" },
+        { "animal":"cat", "name":"Felix" },
+        { "animal":"hamster", "name":"Lightning" }
+    ]
+}`;
+var myObj = JSON.parse(stuff);
+document.getElementById("demo").innerHTML = myObj.name;
+</script>
          
 </body>
 </html>  
