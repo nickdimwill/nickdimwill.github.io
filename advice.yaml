@@ -1,5 +1,11 @@
 - tip:
-  tip: Designate a campaign team member to a digital security role.
+  tip: Designate a campaign team member to have a digital security role.
+  domain: people
+  audience: campaigns
+  level: intermediate
+
+- tip:
+  tip: Have a digital security handout for campaign volunteers to follow.
   domain: people
   audience: campaigns
   level: intermediate
@@ -27,3 +33,117 @@
   domain: passwords
   audience: all
   level: basic
+
+- tip:
+  tip: Use two-factor authentication on all available accounts.
+  domain: passwords
+  audience: all
+  level: basic
+
+- tip:
+  tip: Run software and OS updates. Security flaws are discovered and fixed all the time.
+  domain: software
+  audience: all
+  level: basic
+
+- tip:
+  tip: Do not use the same password on different accounts.
+  domain: passwords
+  audience: all
+  level: basic
+
+- tip:
+  tip: Do not use repeated password patterns (penguin1, penguin2).
+  domain: 
+  audience: 
+  level: 
+
+- tip:
+  tip: A good password is long, like the series of words "correct horse battery staple".
+  domain: passwords
+  audience: all
+  level: basic
+
+- tip:
+  tip: Do not click suspicious links or attachments in emails. Practice skepticism.
+  domain: email
+  audience: all
+  level: basic
+
+- tip:
+  tip: Do not share passwords.
+  domain: passwords
+  audience: all
+  level: basic
+
+- tip:
+  tip: Do not write passwords down on a sticky note attached to your monitor.
+  domain: passwords
+  audience: all
+  level: basic
+
+- tip:
+  tip: Use a password manager such as 1Password to make it easier to use the strongest passwords.
+  domain: passwords
+  audience: all
+  level: intermediate
+
+- tip:
+  tip: On your mac, turn on full-disk encryption.
+  domain: computer
+  audience: all
+  level: intermediate
+
+- tip:
+  tip: Use Firefox for your internet browser.
+  domain: software
+  audience: all
+  level: intermediate
+
+- tip:
+  tip: Plain text messaging is not encrypted. Better is a phone call, video chat, Signal, Telegram.
+  domain: communication
+  audience: all
+  level: intermediate
+
+- tip:
+  tip: Treat private social media communication as if it were public.
+  domain: communication
+  audience: campaigns
+  level: basic
+
+- tip:
+  tip: Use a dedicated email address for political work vs personal life.
+  domain: communication
+  audience: campaigns
+  level: intermediate
+
+- tip:
+  tip: Share documents in Google Drive, not as email attachments.
+  domain: communication
+  audience: campaigns
+  level: basic
+
+- tip:
+  tip: Install uBlock Origin and HTTPS Everywhere extensions for browser. Avoid installing any other extensions.
+  domain: software
+  audience: all
+  level: advanced
+
+- tip:
+  tip: Use widely-used open-source software where possible. More eyes on the source code means more vulnerabilities fixed.
+  domain: software
+  audience: all
+  level: advanced
+
+- tip:
+  tip: Don't allow 3rd-party apps to have access to your email.
+  domain: software
+  audience: all
+  level: advanced
+
+- tip:
+  tip: Look at what 3rd-part apps you have installed on your phone. Watch what permissions they ask for at installation.
+  domain: software
+  audience: all
+  level: advanced

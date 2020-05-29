@@ -28,11 +28,11 @@ for entry in data:
     else:
         all.append(entry["tip"])
 
-    if entry["level"] == "basic":
+    if entry["level"] == "basic" and entry["audience"] != "campaigns":
         basic.append(entry["tip"])
-    elif entry["level"] == "intermediate":
+    elif entry["level"] == "intermediate" and entry["audience"] != "campaigns":
         intermediate.append(entry["tip"])
-    elif entry["level"] == "advanced":
+    elif entry["level"] == "advanced" and entry["audience"] != "campaigns":
         advanced.append(entry["tip"])
 
 
@@ -44,4 +44,5 @@ with open(filename, "w") as fh:
         basic=basic,
         intermediate=intermediate,
         advanced=advanced,
+        campaigns=campaigns,
         ))
