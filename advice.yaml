@@ -1,5 +1,5 @@
 - tip:
-  tip: Designate a team member to a digital security role.
+  tip: Designate a campaign team member to a digital security role.
   domain: people
   audience: campaigns
   level: intermediate
@@ -9,3 +9,21 @@
   domain: passwords
   audience: all
   level: advanced
+
+- tip:
+  tip: Use a password on all computers.
+  domain: passwords
+  audience: all
+  level: basic
+
+- tip:
+  tip: Enable lock screen on phone.
+  domain: passwords
+  audience: all
+  level: basic
+
+- tip:
+  tip: Do not repeat passwords across any accounts.
+  domain: passwords
+  audience: all
+  level: basic

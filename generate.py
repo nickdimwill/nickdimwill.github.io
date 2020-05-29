@@ -1,7 +1,6 @@
 from jinja2 import Environment, FileSystemLoader
 import os
 import yaml
-import black
 
 with open("advice.yaml", "r") as stream:
     try:
@@ -15,15 +14,34 @@ env = Environment(loader=FileSystemLoader(templates_dir))
 template = env.get_template("template.html")
 
 tips = []
+basic = []
+intermediate = []
+advanced = []
+campaigns = []
+all = []
 
 for entry in data:
     print(entry)
-    print(entry["audience"])
     tips.append(entry["tip"])
-    for k in entry.keys():
-        print(k)
+    if entry["audience"] == "campaigns":
+        campaigns.append(entry["tip"])
+    else:
+        all.append(entry["tip"])
+
+    if entry["level"] == "basic":
+        basic.append(entry["tip"])
+    elif entry["level"] == "intermediate":
+        intermediate.append(entry["tip"])
+    elif entry["level"] == "advanced":
+        advanced.append(entry["tip"])
 
 
 filename = "index.html"
 with open(filename, "w") as fh:
-    fh.write(template.render(tips=tips, data=data,))
+    fh.write(template.render(
+        tips=tips, 
+        data=data,
+        basic=basic,
+        intermediate=intermediate,
+        advanced=advanced,
+        ))
