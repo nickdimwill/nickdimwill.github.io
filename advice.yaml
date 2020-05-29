@@ -1,11 +1,11 @@
 - tip:
-  tip: Designate a team member to a digital security role
+  tip: Designate a team member to a digital security role.
   domain: people
   audience: campaigns
   level: intermediate
 
 - tip:
-  tip: Use a physical 2FA key
+  tip: Use a physical 2FA key.
   domain: passwords
   audience: all
   level: advanced
