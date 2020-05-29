@@ -9,17 +9,15 @@
   
 <h1>  <center>  &#128477;  </center> </h1>
 
-
+{% if show_one %}
   <h2><i>Random tip: random-tip</i></h2>
-
+{% endif %}
 
 <br>
  
-
-    {'tip': 'Designate a team member to a digital security role', 'domain': 'people', 'audience': 'campaigns', 'level': 'intermediate'} <br>
-
-    {'tip': 'Use a physical 2FA key', 'domain': 'passwords', 'audience': 'all', 'level': 'advanced'} <br>
-
+{% for item in data %}
+    {{ item }} <br>
+{% endfor %}
 
 </td></tr>
 </table>
