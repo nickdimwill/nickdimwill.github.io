@@ -20,6 +20,8 @@ advanced = []
 campaigns = []
 all = []
 
+count = []
+
 for entry in data:
     print(entry)
     tips.append(entry["tip"])
@@ -34,7 +36,6 @@ for entry in data:
         intermediate.append(entry["tip"])
     elif entry["level"] == "advanced" and entry["audience"] != "campaigns":
         advanced.append(entry["tip"])
-
 
 filename = "index.html"
 with open(filename, "w") as fh:
